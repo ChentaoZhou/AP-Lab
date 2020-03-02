@@ -1,4 +1,4 @@
-package Threading;
+package threading;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;

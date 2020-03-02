@@ -1,4 +1,4 @@
-package Threading;
+package threading;
 
 public class SharedDouble {
 	private Double d = 0.0;

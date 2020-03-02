@@ -1,4 +1,4 @@
-package Threading;
+package threading;
 
 public class MiniThread2 extends Thread{
 	public void run() {

@@ -1,4 +1,4 @@
-package Threading;
+package threading;
 
 public class MaxFinder2 implements Runnable {
 	Double[] array;
