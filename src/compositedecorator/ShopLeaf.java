@@ -1,4 +1,4 @@
-package CompositeDecorator;
+package compositedecorator;
 public class ShopLeaf extends ShopComponent {
 	protected Double basePrice;
 	

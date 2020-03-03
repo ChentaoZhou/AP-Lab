@@ -1,4 +1,4 @@
-package CompositeDecorator;
+package compositedecorator;
 
 public class StaffDiscountDecorator extends ShopComponentDecorator{
 	public StaffDiscountDecorator(ShopComponent decoratedSC) {

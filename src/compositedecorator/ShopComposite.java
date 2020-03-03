@@ -1,4 +1,4 @@
-package CompositeDecorator;
+package compositedecorator;
 import java.util.ArrayList;
 public class ShopComposite extends ShopComponent {
 	private ArrayList<ShopComponent> children;

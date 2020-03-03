@@ -1,4 +1,4 @@
-package CompositeDecorator;
+package compositedecorator;
 
 public abstract class ShopComponentDecorator extends ShopComponent{
 	protected ShopComponent decoratedSC;
