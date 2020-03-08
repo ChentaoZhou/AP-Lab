@@ -42,7 +42,6 @@ public class DoubleWayServer {
 
 		public void run() {
 			try {
-				ArrayList<String> quotes = QuoteLoader.loadQuotes("quotes.txt");
 
 				System.out.println("New connection started on thread " + this.getName());
 				PrintWriter out = new PrintWriter(client.getOutputStream(), true);
@@ -50,9 +49,16 @@ public class DoubleWayServer {
 				while (s.hasNextLine()) {
 //					out.println(quotes.get((new Random()).nextInt(quotes.size())));
 //					Thread.sleep(5000);
+					ArrayList<String> quotes = QuoteLoader.loadQuotes("quotes.txt");
 					String line = s.nextLine();
 					if(line.equals("MOTIVATEME")) {
 						out.println(quotes.get((new Random()).nextInt(quotes.size())));
+					}
+					String statement = line.substring(0, 8);
+					if(statement.equals("ADDQUOTE")) {
+						String quote = line.substring(9);
+						QuoteLoader.writeQuote(quote);
+						out.println("A new quote has been added.");
 					}
 				}
 			}  catch (IOException e) {

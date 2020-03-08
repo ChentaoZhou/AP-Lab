@@ -16,4 +16,21 @@ public class QuoteLoader {
 		}catch(IOException e) {}
 		return q;
 	}
+	public static void writeQuote(String quote) {
+		FileWriter fw = null;
+		try {
+			fw = new FileWriter("quotes.txt",true);
+			fw.write("\n"+quote);
+		} catch (IOException e) {
+			System.err.println("Something bad happens");
+			e.printStackTrace();
+		}finally {
+			try {
+				fw.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+		
+	}
 }
