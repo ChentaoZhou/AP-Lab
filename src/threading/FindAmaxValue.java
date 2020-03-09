@@ -22,7 +22,7 @@ public class FindAmaxValue {
 			t.start();
 		}
 		try {
-			Thread.sleep(2);
+			Thread.sleep(3);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}

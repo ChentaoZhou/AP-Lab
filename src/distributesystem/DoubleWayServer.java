@@ -12,6 +12,7 @@ public class DoubleWayServer {
 	private static int PORT = 8766;
 	private static Socket client;
 	private static ServerSocket listener;
+	
 
 	public static void main(String[] args) throws IOException {
 		// create a server object by PORT number
